@@ -1,0 +1,27 @@
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+13 14 15 16 
+
+
+left = 0
+
+right = n - 1
+
+top = 0
+
+bottom = n - 1
+
+left <= right && top <= bottom 
+
+first row => left -> right(=) top fixed
+
+last column => top + 1 -> bottom(=) right fixed
+
+bottom row => right - 1 -> left(=) bottom fixed
+
+first column => bottom - 1 -> top + 1(=) left fixed
+
+Increment left,top;
+Decrement right, bottom.
+

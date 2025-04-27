@@ -1,0 +1,56 @@
+QUESTION:
+
+Input
+chars =
+["a","b","b","b","b","b","b","b","b","b","b","b","b"]
+Output
+["a","b","1","2"]
+Expected
+["a","b","1","2"]
+
+Explanation: if freq of a char is 1 freq should not be added like "ch1"--assuming 1 is freq of ch. if freq is double or triple digit all digits of it should be inserted in contiguous manner.
+
+CONSTRAINT: should be IN-PLACE
+
+ie. algo will modify the chars = ["a","2","b","2","c","3"] & solve problem using this.
+
+  
+Algorithm:
+
+	Step1: Loop through the char Array(Good to use While)
+
+	Step2: check for repeating characters
+		
+		a. store every character in to ch
+
+		b. while i < n and ch == ith element
+
+			increment i  and increment count//count was initialized to 0
+	step3:  three scenarios with count:
+		
+		case 1: count == 1 continue to the next iteration
+	
+		case2: count < 10 add count to particular position using toString().
+	
+		case3: count is double or triple digit > 10 convert toString then 
+	
+		       iterate and add to the position.
+
+
+	step4: len of updated arr.
+
+
+Note: try to use read Write approach. like char[len++] = blah blah;
+	
+      
+
+
+
+
+
+
+
+
+ 
+	
+		
