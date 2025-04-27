@@ -1,0 +1,5 @@
+//array creation : syntax  DataType NameOfArray [] = new(keyword) [size] Note: once defined can not be changed can not add element or remove element
+
+//Second way DataType arrName [] = {item1, item2, item3,...}
+
+//By default null or 0 value assign int arr[] = new int[50] 50 0s will be stored in this array.

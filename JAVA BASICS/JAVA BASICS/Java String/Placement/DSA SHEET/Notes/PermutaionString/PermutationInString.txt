@@ -1,0 +1,19 @@
+problem: Given two strings s1 and s2, return true if s2 contains a permutation of s1, or false otherwise.
+
+Approach:  take a sliding window from s2(of size s1) check whether it is a permutation of s1
+
+How to check: 	use freq1[26] array to keep freq of all char in s1. 
+		use freq2[] array to keep freq of all char in each sliding window. 
+
+
+--->the first window will be 0 - <sizeOf(s1)
+
+	populate freq1 & freq2.
+
+--->If two arrays are not equal, then sizeOf(s1) - sizeOf(s2) Loop
+	
+	add new upcoming element freq to freq2(create new win)
+	remove old element from freq2(Like first element of prev win, then second then third)
+
+Note: we are using arrays of size 0 - 26, u have to do character - 'a' for index of freq;
+

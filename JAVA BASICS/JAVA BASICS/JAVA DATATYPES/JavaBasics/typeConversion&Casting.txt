@@ -1,0 +1,30 @@
+type comapatible
+
+dt > st
+
+
+bool -> short - > int -> float -> long -> double
+
+
+Widening conversion -- Implicit(Automatic) conversion 
+
+
+
+Lossy conversion...  (Long -> int)
+
+
+int marks = (int) (99.99f)
+
+float a = 99.90f;
+
+int n = (int)a;
+
+
+Explicit conversion & Narrowing conversion.
+
+
+
+Type promotion:
+
+byte, short, char to int automatic conversion.
+
